@@ -88,7 +88,7 @@ exports.updateAcademicYear = AysncHandler(async (req, res) => {
 
 //@desc   Update  Academic Year
 //@route  PUT /api/v1/academic-years/:id
-//@acess  Private
+//@access  Private
 exports.deleteAcademicYear = AysncHandler(async (req, res) => {
   await AcademicYear.findByIdAndDelete(req.params.id);
 
